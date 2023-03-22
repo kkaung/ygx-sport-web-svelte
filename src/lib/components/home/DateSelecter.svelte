@@ -1,21 +1,31 @@
 <script lang="ts">
+    import { UIStore } from '$lib/stores';
+    import moment from 'moment';
     import Icon from '../shared/Icon.svelte';
 
-    let loading: boolean = false;
+    const { date } = UIStore;
 
     export let className: string = '';
+
+    const clickHandler = (state: 'backword' | 'forward') => {
+        state === 'backword' && $date.setDate($date.getDate() - 1);
+        state === 'forward' && $date.setDate($date.getDate() + 1);
+
+        $date = new Date($date);
+    };
 </script>
 
-<div class={`${className} flex items-center justify-between p-4`}>
-    <button class="btn ">
+<div class={`${className} flex items-center justify-between py-4 px-[1rem]`}>
+    <button class="btn" on:click={() => clickHandler('backword')}>
         <Icon name="chevron_left" />
     </button>
-    {#if loading}
-        <div>Loading...</div>
-    {:else}
-        <div class="text-xl">18/03 Sat</div>
-    {/if}
-    <button class="btn flex items-center">
+    <div class="text-xl">
+        {moment($date).format('DD[/]MM ddd')}
+    </div>
+    <button
+        class="btn flex items-center"
+        on:click={() => clickHandler('forward')}
+    >
         <Icon name="chevron_right" className="" />
     </button>
 </div>

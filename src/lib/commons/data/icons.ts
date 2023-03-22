@@ -9,6 +9,10 @@ export type Icon = {
     users: string;
     chevron_left: string;
     chevron_right: string;
+    tv: string;
+    close: string;
+    football: string;
+    no_match: string,
 };
 
 export const icons: Icon = {
@@ -22,4 +26,8 @@ export const icons: Icon = {
     users: 'mi mi-users',
     chevron_left: 'mi mi-chevron-left',
     chevron_right: 'mi mi-chevron-right',
+    tv: 'fa-solid fa-tv',
+    close: 'mi mi-close',
+    football: 'fa-solid fa-futbol',
+    no_match: 'fa-sharp fa-regular fa-video-slash'
 };

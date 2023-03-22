@@ -20,3 +20,14 @@
 </svelte:head>
 
 <i class={icon + ' ' + className} />
+
+<style>
+    i::before {
+        line-height: 0;
+        display: flex;
+    }
+
+    i {
+        line-height: 0;
+    }
+</style>

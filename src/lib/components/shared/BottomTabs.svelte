@@ -14,13 +14,13 @@
     const tabs = [
         new Tab('Home', routes.home, 'home'),
         new Tab('Live', routes.sports_live, 'users'),
-        new Tab('Live', routes.sports_live, 'play'),
+        new Tab('Play', routes.sports_live, 'play'),
         new Tab('Profile', routes.sports_live, 'user'),
     ];
 </script>
 
 <nav
-    class="z-1 fiexed bottom-0 left-0 right-0 flex items-center justify-evenly py-3 px-4 bottom-tabs-bg"
+    class="z-1 fixed bottom-0 left-0 right-0 flex items-center justify-evenly py-3 px-4 bottom-tabs-bg sm:hidden"
 >
     {#each tabs as tab}
         <ActiveLink to={tab.to}>

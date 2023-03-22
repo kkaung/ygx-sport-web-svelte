@@ -16,4 +16,9 @@ export const iconLinks = [
         integrity:
             'sha512-DR9Jj0uFIfe7v1QLrvPRusRxqdSnVSVRyRBt1H8gcRQgxMKEwsOMSNYs0hyIpo8AITFyCMDC2Q1fCg1XcgdYig==',
     },
+    {
+        name: 'Material Icons',
+        herf: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
+        integrity: '',
+    },
 ];

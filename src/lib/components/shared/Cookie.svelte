@@ -1,10 +1,13 @@
 <script lang="ts">
+    import { onDestroy } from 'svelte';
+    import { spring, tweened } from 'svelte/motion';
+
     let cookie: boolean = false;
 </script>
 
 {#if cookie}
     <div
-        class="fixed left-0 right-0 bottom-[54px] bg-stone-900 py-4 sm:bottom-0"
+        class="fixed left-0 right-0 bottom-[54px] bg-stone-900 py-4 px-[1rem] sm:bottom-0"
     >
         <div
             class="container mx-auto flex flex-col md:flex-row md:justify-between md:items-start"

@@ -8,3 +8,9 @@
         background-color: #152025;
     }
 }
+
+@layer components {
+    .skeleton {
+        @apply bg-gray-600/30
+    }
+}
