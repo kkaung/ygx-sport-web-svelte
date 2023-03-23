@@ -4,8 +4,9 @@ import type {
     GetMatchesResonse,
 } from '$lib/commons/types/soccerService';
 import moment from 'moment';
+import { env } from '$env/dynamic/public';
 
-const base = 'http://localhost:3001/api/sports/soccer';
+const base = `${env.PUBLIC_API_URL}/api/sports/soccer`;
 
 const fetchOptions = {};
 

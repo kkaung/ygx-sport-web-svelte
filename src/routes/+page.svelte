@@ -4,13 +4,17 @@
     import { soccerService } from '$lib/services';
     import { League, Match } from '$lib/components/soccer';
     import { UIStore } from '$lib/stores';
+    import { onMount } from 'svelte';
 
     const { date } = UIStore;
 
-    let loadData: any;
+    let loadData: any = soccerService.getMatches($date);
 
-    date.subscribe(date => {
-        loadData = soccerService.getMatches(date);
+    onMount(() => {
+        date.subscribe(date => {
+            loadData = soccerService.getMatches(date);
+        });
+        console.log(process.env.ORIGIN);
     });
 </script>
 

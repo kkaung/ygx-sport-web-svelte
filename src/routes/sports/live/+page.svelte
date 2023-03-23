@@ -4,8 +4,11 @@
     import { League, Match } from '$lib/components/soccer';
     import Loader from '$lib/components/home/Loader.svelte';
     import { routes } from '$lib/commons/data';
+    import { onMount } from 'svelte';
 
     const loadData = soccerService.getLiveMatches();
+    
+    onMount(() => {});
 </script>
 
 <header class="px-[1rem]">

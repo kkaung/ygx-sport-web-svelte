@@ -3,6 +3,7 @@
     import { IPlayer } from '$lib/components/shared';
     import { soccerService } from '$lib/services';
     import { UIStore } from '$lib/stores';
+    import { onMount } from 'svelte';
 
     const player = UIStore.player;
 
@@ -15,7 +16,10 @@
     {:then data}
         <header>
             {#if $player}
-                <IPlayer src="" onClose={() => player.set(false)} />
+                <IPlayer
+                    src="https://www.btyvplayline3a.com/video4.html?url=https://flv3.04lv.com/live/L1446657.flv?txSecret=afcd8d5d1d92d95de72c7a98f7fcc5de&txTime=641D5010"
+                    onClose={() => player.set(false)}
+                />
             {:else}
                 <MatchDetails.MatchStatusDetails
                     status={data.current.status}
@@ -29,7 +33,3 @@
     {/await}
     <div />
 </header>
-<div />
-
-<style>
-</style>

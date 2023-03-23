@@ -4,6 +4,7 @@
     export let name: string = '';
     export let to: string;
 
+
     let match: boolean = $page.url.pathname === to;
 </script>
 

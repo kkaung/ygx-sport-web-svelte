@@ -23,6 +23,6 @@
 
 <style>
     .wrapper {
-        @apply flex items-center justify-between px-[1rem] py-2 border-b border-gray-100/10 transition hover:text-gray-300;
+        @apply flex items-center justify-between px-[1rem] py-2 border-b border-gray-100/10 transition truncate hover:text-gray-300;
     }
 </style>

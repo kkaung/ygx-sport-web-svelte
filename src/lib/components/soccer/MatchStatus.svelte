@@ -32,15 +32,13 @@
     {#if ongoing}
         <div>
             {#if isHalfTime}
-                <div />
+                <div class="text-center">
+                    <GoalScoreResult {homeScore} {awayScore} />
+                    <div class="text-xs text-green-400">HT</div>
+                </div>
             {:else}
                 <OngoingTime time={liveTime?.short} />
                 <GoalScoreResult {homeScore} {awayScore} />
-                <div>
-                    {#if isHalfTime}
-                        <div class="text-sm">HT</div>
-                    {/if}
-                </div>
             {/if}
         </div>
     {:else if !started}
