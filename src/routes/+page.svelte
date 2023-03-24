@@ -5,6 +5,7 @@
     import { League, Match } from '$lib/components/soccer';
     import { UIStore } from '$lib/stores';
     import { onMount } from 'svelte';
+    import Loader from '$lib/components/home/Loader.svelte';
 
     const { date } = UIStore;
 

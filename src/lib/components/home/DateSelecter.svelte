@@ -15,11 +15,11 @@
     };
 </script>
 
-<div class={`${className} flex items-center justify-between py-4 px-[1rem]`}>
+<div class={`${className} flex items-center justify-between py-3 px-[1rem]`}>
     <button class="btn" on:click={() => clickHandler('backword')}>
         <Icon name="chevron_left" />
     </button>
-    <div class="text-xl">
+    <div class="text-xl date">
         {moment($date).format('DD[/]MM ddd')}
     </div>
     <button
@@ -32,6 +32,10 @@
 
 <style>
     .btn {
-        @apply flex items-center justify-center text-3xl w-[40px] h-[40px] p-1 rounded-full bg-gray-500/40 transition hover:bg-gray-500;
+        @apply flex items-center justify-center text-2xl w-[35px] h-[35px] p-1 rounded-full bg-gray-500/40 transition hover:bg-gray-500;
+    }
+
+    .date {
+        @apply animate-text bg-gradient-to-r from-teal-500 via-lime-400 to-primary bg-clip-text text-transparent font-semibold;
     }
 </style>

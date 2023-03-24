@@ -11,11 +11,14 @@
 
 <div class="wrapper">
     <div
-        class="p-4 flex items-center justify-between animate-pulse border-b border-gray-100/10"
+        class="px-4 py-3 flex items-center justify-between animate-pulse border-b border-gray-100/10"
     >
-        <div class="h-[30px] w-[30px] skeleton rounded-full" />
-        <div class="h-[10px] w-[50px] skeleton rounded" />
-        <div class="h-[30px] w-[30px] skeleton rounded-full" />
+        <div class="h-[35px] w-[35px] skeleton rounded-full" />
+        <div class="flex flex-col items-center space-y-1" >
+            <div class="h-[10px] w-[60px] skeleton rounded" />
+            <div class="h-[5px] w-[40px] skeleton rounded"></div>
+        </div>
+        <div class="h-[35px] w-[35px] skeleton rounded-full" />
     </div>
     {#each loaders as loader}
         <div>

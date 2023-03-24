@@ -8,6 +8,7 @@ module.exports = {
             },
             animation: {
                 'fade-in': 'fade-in 1s ease-in-out infinite',
+                text: 'text 5s ease infinite',
             },
             keyframes: {
                 'fade-in': {
@@ -15,6 +16,18 @@ module.exports = {
                         opacity: 0,
                     },
                     '100%': { opacity: 1 },
+                },
+            },
+            keyframes: {
+                text: {
+                    '0%, 100%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'left center',
+                    },
+                    '50%': {
+                        'background-size': '200% 200%',
+                        'background-position': 'right center',
+                    },
                 },
             },
         },

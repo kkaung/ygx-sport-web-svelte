@@ -12,7 +12,8 @@ export type Icon = {
     tv: string;
     close: string;
     football: string;
-    no_match: string,
+    no_match: string;
+    google: string;
 };
 
 export const icons: Icon = {
@@ -29,5 +30,6 @@ export const icons: Icon = {
     tv: 'fa-solid fa-tv',
     close: 'mi mi-close',
     football: 'fa-solid fa-futbol',
-    no_match: 'fa-sharp fa-regular fa-video-slash'
+    no_match: 'fa-sharp fa-regular fa-video-slash',
+    google: 'fa-brands fa-google',
 };

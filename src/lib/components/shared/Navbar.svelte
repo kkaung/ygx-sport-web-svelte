@@ -3,6 +3,7 @@
     import Icon from './Icon.svelte';
     import Logo from './Logo.svelte';
     import ActiveLink from './ActiveLink.svelte';
+    import MobileNavbar from './MobileNavbar.svelte';
 
     class NavItem {
         constructor(public name: string, public to: string) {}
@@ -31,3 +32,4 @@
         </ul>
     </div>
 </nav>
+<MobileNavbar />

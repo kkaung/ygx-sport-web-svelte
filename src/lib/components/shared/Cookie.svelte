@@ -13,8 +13,7 @@
             class="container mx-auto flex flex-col md:flex-row md:justify-between md:items-start"
         >
             <p class="text-sm text-gray-200">
-                Our website stores cookies on your computer. By continuing to
-                browse the website, you explicitly accept the use of cookies.{' '}
+                Hi there 👋, we use cookies to offer you a better browsing experience and to analyze site traffic.
                 <a class="underline" href="/">Learn more</a>
             </p>
             <div class="mt-4 md:mt-0">

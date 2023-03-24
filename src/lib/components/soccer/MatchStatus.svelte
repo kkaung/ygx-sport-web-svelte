@@ -55,7 +55,7 @@
                 />
             {/if}
             <GoalScoreResult {homeScore} {awayScore} />
-            <div class="text-sm text-gray-500">FT</div>
+            <div class="short text-xs text-gray-400">FT</div>
         </div>
     {/if}
 </div>
@@ -63,5 +63,8 @@
 <style>
     .wrapper {
         @apply text-center;
+    }
+
+    .short {
     }
 </style>

@@ -15,6 +15,6 @@
 
 <style>
     .main {
-        min-height: calc(100vh);
+        min-height: 100vh;
     }
 </style>
