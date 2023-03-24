@@ -3,7 +3,9 @@
     import { signIn } from '@auth/sveltekit/client';
     import { page } from '$app/stores';
 
-    console.log($page.data.session);
+    const signInHanlder = (provider: 'facebook' | 'google') => {
+        signIn(provider);
+    };
 </script>
 
 <div class="container mx-auto px-[3rem] py-12">
@@ -16,11 +18,11 @@
         </div>
     </header>
     <div class="flex flex-col space-y-3">
-        <button class="btn space-x-1" on:click={() => signIn('facebook')}
+        <button class="btn space-x-1" on:click={() => signInHanlder('facebook')}
             ><Icon name="facebook" className="text-lg" />
             <span>Facebook</span></button
         >
-        <button class="btn space-x-1"
+        <button class="btn space-x-1" on:click={() => signInHanlder('google')}
             ><Icon name="google" /><span>Google</span></button
         >
     </div>

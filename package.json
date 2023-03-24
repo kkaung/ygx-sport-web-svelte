@@ -32,6 +32,7 @@
         "dotenv": "^16.0.3",
         "moment": "^2.29.4",
         "moment-timezone": "^0.5.41",
-        "svelte-fast-marquee": "^0.4.1"
+        "svelte-fast-marquee": "^0.4.1",
+        "swiper": "^9.1.1"
     }
 }

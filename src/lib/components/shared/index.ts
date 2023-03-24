@@ -5,6 +5,7 @@ import Loader from './Loader.svelte';
 import Image from './Image.svelte';
 import IPlayer from './IPlayer.svelte';
 import Icon from './Icon.svelte';
+import Switch from './Switch.svelte';
 import SponseredBrandsMarquee from './SponseredBrandsMarquee.svelte';
 
 export {
@@ -15,5 +16,6 @@ export {
     Image,
     IPlayer,
     Icon,
+    Switch,
     SponseredBrandsMarquee,
 };
