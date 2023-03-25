@@ -17,13 +17,13 @@
     <div class="wrapper">
         <div class="left">
             <small class="text-gray-400 font-light text-xs">
-                Copyright © 2023 YGX Sports Inc. All rights reserved.
+                Copyright © 2023 YGX Sports Inc.
             </small>
             <div class="legal">
                 <a href={routes.terms_and_conditions}>Terms of Use</a>
                 <span class="text-gray-500">|</span>
                 <a href={routes.privacy_policy}>Privacy Policy</a>
-                <span>|</span>
+                <span class="text-gray-500">|</span>
                 <a href="/">Cookie Policy</a>
             </div>
         </div>

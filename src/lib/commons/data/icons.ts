@@ -15,6 +15,7 @@ export type Icon = {
     no_match: string;
     google: string;
     languages: string;
+    horn: string;
 };
 
 export const icons: Icon = {
@@ -33,5 +34,6 @@ export const icons: Icon = {
     football: 'fa-solid fa-futbol',
     no_match: 'fa-sharp fa-regular fa-video-slash',
     google: 'fa-brands fa-google',
-    languages: 'fa-solid fa-language'
+    languages: 'fa-solid fa-language',
+    horn: 'fa-solid fa-bullhorn',
 };

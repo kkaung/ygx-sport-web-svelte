@@ -31,9 +31,9 @@
         sm:hidden;
     }
     .logo {
-        @apply text-2xl cursor-pointer animate-text bg-gradient-to-r from-teal-500 via-lime-400 to-primary bg-clip-text text-transparent font-semibold ;
+        @apply text-2xl cursor-pointer animate-text bg-gradient-to-r from-teal-500 via-lime-400 to-primary bg-clip-text text-transparent font-semibold;
     }
     .btn {
-        @apply bg-primary py-1 px-2 rounded;
+        @apply bg-primary py-1 px-2 rounded ;
     }
 </style>

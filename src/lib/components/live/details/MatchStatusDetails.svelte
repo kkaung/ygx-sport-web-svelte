@@ -64,6 +64,6 @@
 
 <style>
     .btn {
-        @apply bg-gray-400/50 p-1 text-xs rounded-full;
+        @apply bg-gray-700/80 p-1 text-xs rounded-full;
     }
 </style>
