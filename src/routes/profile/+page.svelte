@@ -8,7 +8,7 @@
 
 <header class="flex flex-col items-center mt-8">
     <img src={user?.image} alt="" class="avatar" />
-    <div>moon123</div>
+    <div>@moon123</div>
     <div>{user?.email}</div>
     <button class="logout" on:click={() => signOut()}>Logout</button>
 </header>

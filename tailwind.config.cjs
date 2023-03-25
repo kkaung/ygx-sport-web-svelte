@@ -17,8 +17,6 @@ module.exports = {
                     },
                     '100%': { opacity: 1 },
                 },
-            },
-            keyframes: {
                 text: {
                     '0%, 100%': {
                         'background-size': '200% 200%',

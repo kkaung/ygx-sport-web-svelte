@@ -27,7 +27,9 @@
         <div class="text-center min-w-[40px]">
             {#if !finished}
                 <div class="text-green-400">
-                    93<span class="animate-fade-in">'</span>
+                    {status.liveTime?.short}<span class="animate-fade-in"
+                        >'</span
+                    >
                 </div>
             {/if}
             <div class="text-4xl">{homeTeam.score} - {awayTeam.score}</div>

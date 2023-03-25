@@ -2,6 +2,8 @@
     import { page } from '$app/stores';
     import LanguageSwitch from './LanguageSwitch.svelte';
 
+    const logo = "YGX"
+
     const session = $page.data.session;
 
     const firstName = session?.user?.name?.split(' ')[0];
@@ -11,7 +13,7 @@
 
 <nav class={`${className} nav`}>
     <div class="flex items-center justify-between">
-        <a href="/" class="logo"> YGX </a>
+        <a href="/" class="logo">{logo}</a>
         <div class="flex items-center space-x-4">
             {#if !session?.user}
                 <a href="/account/login" class="btn">Join us</a>
@@ -29,7 +31,7 @@
         sm:hidden;
     }
     .logo {
-        @apply cursor-pointer animate-text bg-gradient-to-r from-teal-500 via-lime-400 to-primary bg-clip-text text-transparent font-semibold text-lg;
+        @apply text-2xl cursor-pointer animate-text bg-gradient-to-r from-teal-500 via-lime-400 to-primary bg-clip-text text-transparent font-semibold ;
     }
     .btn {
         @apply bg-primary py-1 px-2 rounded;

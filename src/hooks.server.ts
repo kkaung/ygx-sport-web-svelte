@@ -1,11 +1,33 @@
 import { SvelteKitAuth } from '@auth/sveltekit';
 import Facebook from '@auth/core/providers/facebook';
-import { FACEBOOK_ID, FACEBOOK_SECRET } from '$env/static/private';
 import type { Handle } from '@sveltejs/kit';
-import { sequence } from '@sveltejs/kit/hooks';
+import { env } from '$env/dynamic/private';
+import { MyAdapter } from '$lib/adapter';
 
 export const handle: Handle = SvelteKitAuth({
     providers: [
-        Facebook<any>({ clientId: FACEBOOK_ID, clientSecret: FACEBOOK_SECRET }),
+        Facebook<any>({
+            clientId: env.FACEBOOK_ID,
+            clientSecret: env.FACEBOOK_SECRET,
+        }),
     ],
+    callbacks: {
+        async signIn({ user, credentials, account }) {
+            return true;
+        },
+
+        async redirect({ baseUrl }) {
+            return baseUrl;
+        },
+
+        async jwt({ token, account }) {
+            token.accessToken = account?.access_token;
+
+            return token;
+        },
+        async session({ session, token }) {
+            // session.accessToken = token.accessToken;
+            return session;
+        },
+    },
 });
