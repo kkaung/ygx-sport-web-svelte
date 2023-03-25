@@ -6,7 +6,7 @@
         MatchEvents,
     } from '$lib/commons/types/soccer';
     import { MatchDetails } from '$lib/components/live';
-    import { Navbar, IPlayer, Icon } from '$lib/components/shared';
+    import { IPlayer } from '$lib/components/shared';
     import { soccerService } from '$lib/services';
     import { UIStore } from '$lib/stores';
     import { onMount } from 'svelte';
@@ -77,6 +77,9 @@
             </div>
         {/each}
     </div>
+    <div class="fixed left-0 right-0 bottom-[48px] bg-black/80 p-2 text-center cursor-pointer">
+        New messages below
+    </div>
     <form class="input-wrapper">
         <input type="text" class="text-input" placeholder="Send a message" />
         <button class="send-btn">Send</button>
@@ -110,5 +113,9 @@
 
     .join-chat-name {
         @apply cursor-pointer animate-text bg-gradient-to-r from-teal-500 via-lime-400 to-primary bg-clip-text text-transparent;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
     }
 </style>

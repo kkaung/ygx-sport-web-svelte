@@ -10,17 +10,16 @@
     <main>
         <slot />
         <!-- <SponseredBrandsMarquee /> -->
-        <BottomTabs />
     </main>
+    <BottomTabs />
     <Footer />
 </div>
 
 <style>
     .main {
-        @apply pb-[62px] sm:pb-0;
     }
 
     main {
-        min-height: calc(100vh - 62px - 49px);
+        min-height: calc(100vh - 62px - 49px - 100px);
     }
 </style>

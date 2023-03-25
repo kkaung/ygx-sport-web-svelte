@@ -16,6 +16,7 @@ export type Icon = {
     google: string;
     languages: string;
     horn: string;
+    camera: string;
 };
 
 export const icons: Icon = {
@@ -36,4 +37,5 @@ export const icons: Icon = {
     google: 'fa-brands fa-google',
     languages: 'fa-solid fa-language',
     horn: 'fa-solid fa-bullhorn',
+    camera: 'mi mi-camera',
 };
