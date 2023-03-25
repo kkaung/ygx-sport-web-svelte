@@ -10,10 +10,10 @@
         </div>
         <div class="rounded-full w-[22px] h-[22px] skeleton" />
     </div>
-    <div class="flex flex-col items-center space-y-1">
-        <div class="h-[3px] w-[20px] rounded skeleton" />
-        <div class="h-[5px] w-[20px] rounded skeleton" />
-        <div class="h-[3px] w-[20px] rounded skeleton" />
+    <div class="flex flex-col items-center space-y-1 min-w-[55px]">
+        <div class="h-[5px] w-[50px] rounded skeleton" />
+        <div class="h-[4px] w-[40px] rounded skeleton" />
+        <div class="h-[3px] w-[25px] rounded skeleton" />
     </div>
     <div class="flex items-center flex-1 space-x-1">
         <div class="rounded-full w-[22px] h-[22px] skeleton" />

@@ -12,9 +12,9 @@
     export let streaming: boolean | undefined;
 </script>
 
-<div class={`${className} wrapper space-x-4`}>
+<div class={`${className} wrapper space-x-1`}>
     <HomeTeam name={home.name} imageUrl={home.imageUrl} className="flex-1" />
-    <MatchStatus {status} {home} {away} />
+    <MatchStatus {status} {home} {away} className="min-w-[55px]" />
     {#if streaming}
         <div class="flex items-center flex-1">
             <AwayTeam name={away.name} imageUrl={away.imageUrl} />
@@ -32,5 +32,9 @@
 <style>
     .wrapper {
         @apply flex items-center py-1 px-[1rem] border-b border-gray-100/10 transition hover:bg-gray-500/10;
+    }
+
+    .match-status {
+        @apply min-w-[100px] text-center;
     }
 </style>

@@ -8,7 +8,7 @@
 
 <div class={`${className} flex-1 flex flex-col items-center`}>
     <Image src={imageUrl} alt={name} className="h-[45px] w-[45px]" />
-    <h1 class="name">{name}</h1>
+    <h1 class="name text-center">{name}</h1>
 </div>
 
 <style>

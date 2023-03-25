@@ -5,6 +5,7 @@
         MatchEvents,
     } from '$lib/commons/types/soccer';
     import { Icon } from '$lib/components/shared';
+    import OngoingTime from '$lib/components/soccer/OngoingTime.svelte';
     import { UIStore } from '$lib/stores';
     import TeamDetails from './TeamDetails.svelte';
     import TeamGoals from './TeamGoals.svelte';
@@ -19,18 +20,23 @@
     const player = UIStore.player;
 
     const { finished } = status;
+
+    const halfTime = status.liveTime?.short === 'HT';
 </script>
 
 <div class={`${className} space-y-4`}>
-    <div class="flex items-center">
+    <div class="flex space-x-1">
         <TeamDetails imageUrl={homeTeam.imageUrl} name={homeTeam.name} />
         <div class="text-center min-w-[40px]">
             {#if !finished}
-                <div class="text-green-400">
-                    {status.liveTime?.short}<span class="animate-fade-in"
-                        >'</span
-                    >
-                </div>
+                {#if !halfTime}
+                    <OngoingTime
+                        time={status.liveTime?.short}
+                        className="text-green-400 text-lg"
+                    />
+                {:else}
+                    <div class="text-green-400">HT</div>
+                {/if}
             {/if}
             <div class="text-4xl">{homeTeam.score} - {awayTeam.score}</div>
             {#if finished}

@@ -25,19 +25,20 @@
         aggregatedStr,
     } = status;
 
-    const isHalfTime: boolean = liveTime?.short === 'HT';
+    const halfTime: boolean = liveTime?.short === 'HT';
 </script>
 
 <div class={`${className}`}>
     {#if ongoing}
-        <div>
-            {#if isHalfTime}
-                <div class="text-center">
-                    <GoalScoreResult {homeScore} {awayScore} />
-                    <div class="text-xs text-green-400">HT</div>
-                </div>
+        <div class="text-center">
+            {#if halfTime}
+                <GoalScoreResult {homeScore} {awayScore} />
+                <div class="text-xs text-green-400">HT</div>
             {:else}
-                <OngoingTime time={liveTime?.short} />
+                <OngoingTime
+                    time={liveTime?.short}
+                    className="text-red-500 text-xs"
+                />
                 <GoalScoreResult {homeScore} {awayScore} />
             {/if}
         </div>
@@ -65,6 +66,5 @@
         @apply text-center;
     }
 
-    .short {
-    }
+    
 </style>

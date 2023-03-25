@@ -5,16 +5,22 @@
     import SponseredBrandsMarquee from './SponseredBrandsMarquee.svelte';
 </script>
 
-<Navbar />
-<main class="main">
-    <slot />
-    <!-- <SponseredBrandsMarquee /> -->
-    <BottomTabs />
-</main>
-<Footer />
+<div class="main">
+    <Navbar />
+    <main>
+        <slot />
+        <!-- <SponseredBrandsMarquee /> -->
+        <BottomTabs />
+    </main>
+    <Footer />
+</div>
 
 <style>
     .main {
+        @apply pb-[62px] sm:pb-0;
+    }
+
+    main {
         min-height: 100vh;
     }
 </style>

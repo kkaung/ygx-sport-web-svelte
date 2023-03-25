@@ -2,7 +2,6 @@ import { SvelteKitAuth } from '@auth/sveltekit';
 import Facebook from '@auth/core/providers/facebook';
 import type { Handle } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
-import { MyAdapter } from '$lib/adapter';
 
 export const handle: Handle = SvelteKitAuth({
     providers: [

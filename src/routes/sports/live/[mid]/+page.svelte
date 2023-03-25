@@ -40,7 +40,7 @@
         <header>
             {#if $player}
                 <IPlayer
-                    src="https://www.btyvplayline3a.com/video4.html?url=https://flv3.04lv.com/live/L1448875.flv?txSecret=e87b47a5b2620d387ffad4091cb09f44&txTime=641EDF70"
+                    src="https://www.btyvplayline3a.com/video4.html?url=https://flv3.04lv.com/live/L14567430.flv?txSecret=4cf0ec084b56a98a895f04425515bbb1&txTime=641FE668"
                     onClose={() => player.set(false)}
                 />
             {:else}
